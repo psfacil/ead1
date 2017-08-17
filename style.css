@@ -1,0 +1,80 @@
+body {
+  background: black;
+  overflow: hidden;
+}
+
+
+#iframe{
+opacity: 0;
+  -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+
+ }
+.cinematic {
+  position: absolute;
+  width: 100%;
+}
+.cinematic p {
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0;
+   animation-name: cinematic;
+   animation-fill-mode: forwards;
+ 
+  
+
+}
+
+.cinematic:nth-child(1) p {
+
+  animation-duration: 4s;
+   
+}
+
+.cinematic:nth-child(2) p {
+
+  animation-delay: 4s;
+   
+}
+
+.cinematic:nth-child(3) p {
+  
+  animation-delay: 8s;
+}
+
+.cinematic:nth-child(4) p {
+   
+       animation-delay: 12s;
+
+ 
+           }
+    
+  
+
+
+
+@keyframes cinematic {
+  0% {
+    letter-spacing: 2px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    letter-spacing: 8px;
+    opacity: 0;
+
+  }
+}
+
+
+
+
